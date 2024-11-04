@@ -61,35 +61,29 @@ section{
     width: 100%;
     display: flex;
 }
-
-section.content_right{
+.tietoja{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+section.aloitus{
     width: 45%;
     background-color: #F7F5EE;
-    border: 1px solid #AC9675;
+    border: 3px solid #AC9675;
     border-radius: 10px;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 5%;
+    margin-top: 5%;
     overflow: hidden;
     text-align: left;
-    display: block;
-}   
+    padding-top: 1%;
+    padding-left: 1%;
+} 
 img{
-    width: 20%;
-    height: 80%;
+    width: 40%;
+    height: 10%;
     padding-top: 1%;
     padding-right: 5%;
     padding-left: 5%;
     padding-bottom: 1%;
-}
-h1{
-    text-align: center;
-}
-h2{
-    color: #E49A2F;
-    font-size: 1.2em;
-    padding-top: 3%;
-    padding-left: 6%;
 }
 p{  
     font-family: "Roboto", sans-serif;
