@@ -1,41 +1,55 @@
-* {margin:0}
+* {
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
+    background-color: #ffffff; /*Muista vaihtaaa jokin tausta*/
 }
 main{
-    max-width: auto;
+    max-width: 90%;
     margin: 0 auto;
 }
 header{
     font-family: "Neuton", serif;
-    /*font-weight: 700;*/
     font-style: normal;
     letter-spacing: 0.5em;
-    background-color: #575757;
-    color: #F0EBEB;
-    /*text-align: left;*/
+    color: #575757;
     font-size: 400%;
     padding: 80px;
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;      /*Varjostus*/
 }
-
 .s{
     padding-left: 10%;
     font-size: 120%;
 }
-nav, footer {
+.dev{
+    font-size: 0.3em;
+    letter-spacing: 0.3em;
+    padding-top: 5%;
+    padding-left: 60%;
+}
+nav{
     height: 30%;
     background-color: #575757;
     color: #F7F5EE;
     text-align: center;
 }
-nav ul{
+#navbar{
     list-style-type: none;
     margin: 0;
     padding-right: 50px;
     overflow: hidden;
     text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 3%;
 }
 nav li {
     display: inline-block;
@@ -47,53 +61,163 @@ nav a {
     padding:6px 16px;
     text-decoration: none;
 }
-nav li a:hover {
-    background-color:#4c4c4c;
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
-nav li a:active {
-    background-color: #575757;
+h2{
+    text-align: center;
 }
-nav li a:active {
-    color: #575757;
-}
-section{
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-}
-.tietoja{
-    margin-left: 5%;
-    margin-top: 2%;
-}
-section.aloitus{
-    width: 45%;
-    background-color: #F7F5EE;
-    border: 3px solid #AC9675;
-    border-radius: 10px;
-    margin-left: 5%;
-    margin-top: 5%;
+p.aloitus{
+    width: 30%;
+    /*border: 3px solid #000000;*/
+    /*border-radius: 10px;*/
+    /*margin-left: 5%;*/
+    margin-top: 8%;
+    margin-right: 15%;
+    padding:1%;
     overflow: hidden;
     text-align: left;
-    padding-top: 1%;
-    padding-left: 1%;
-} 
+    /*padding-top: 1%;*/
+    /*padding-left: 1%;*/
+    float: right;
+}
+section#info{
+    display: block;
+    background-color: white;
+    padding-bottom: 5%;
+}
+section#työhistoria{
+    /*border: 2px solid black;  /*muista poistaaa*/
+    display: block;
+    margin-top: 3%;
+    /*margin-bottom: 3%;     /*Muista poistaa*/
+    padding-bottom: 5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /*järjestetään div elementit alekkain*/
+    gap: 10px; /*Div osioille välit alekkain */
+}
+section#osaaminen{
+    /*height: 500px;              /*muista poistaaa*/
+    /*border: 2px solid black;  /*muista poistaaa*/
+    /*display: block;*/
+    margin-top: 3%;
+    margin-bottom: 3%;     /*Muista poistaa*/
+    padding-bottom: 5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /*järjestetään div elementit alekkain*/
+    gap: 10px; /*Div osioille välit alekkain */
+    padding: 20px;
+}
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+progress::-webkit-progress-value {
+    background-color: #5cc860;
+    border-radius: 10px;
+}
+progress::-moz-progress-bar {
+    background-color: #4caf50;
+    border-radius: 10px; 
+}
+section#portfolio{
+    border: 2px solid black;  /*muista poistaaa*/
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;     /*Muista poistaa*/
+    padding-bottom: 5%;
+    background-color: white;
+}
+section.harj{
+    width: 30%;
+    /*border: 3px solid #000000;*/
+    /*border-radius: 10px;*/
+    /*margin-left: 5%;*/
+    margin-top: 2%;
+    margin-left: 50%;
+    overflow: hidden;
+    text-align: left;
+    /*padding-top: 1%;*/
+    /*padding-left: 1%;*/
+    /*float: left;*/
+}
+section.jakso{
+    width: 32%;
+    /*border: 3px solid #000000;*/
+    /*border-radius: 10px;*/
+    margin-left: 50%;
+    margin-top: 2%;
+    overflow: hidden;
+    text-align: left;
+    /*padding-top: 1%;*/
+    /*padding-left: 1%;*/
+    /*float: right;*/
+}
 img{
-    width: 40%;
-    height: 10%;
-    padding-top: 1%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 1%;
+    width: 30%;
+    height: 20%;
+    margin-left: 15%;
+    margin-top: 3%;
+    border-radius: 40%;
 }
 p{  
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-size: 20px;
     font-style: normal;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 3%;
 }
-i{
-    color: #575757;
+i.fab, i.fa-database, i.fa-html5, i.fa-linux{
+    font-size: 3em;
+    color: rgb(73, 73, 146);
+}
+i.fa-sharp{    
+    font-size: 3em;
+    color:purple;
+}
+i.fa-css3-alt{
+    font-size: 3em;
+    color:rgb(87, 101, 251);
+}
+i.fa-github{
+    font-size: 3em;
+    color: black;
+}
+#python, #csharp, #sql, #html, #css, #linux, #git{
+    margin-left: 4%;
+}
+#python progress{
+    margin-left: 2.7%;
+}
+#sql progress{              
+    margin-left: 2.8%;
+}
+#html progress, #css progress{
+    margin-left: 3.2%;
+}
+#linux progress{
+    margin-left: 2.5%;
+}
+#git progress{
+    margin-left: 2.2%;
+}
+footer{
+    background-color: #575757;
+    color: #F7F5EE;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+i.fa-linkedin, i.fa-envelope{
+    font-size: 3em;
+    color:rgb(62, 97, 255);
+    margin-right: 5%;
 }

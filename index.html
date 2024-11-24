@@ -2,32 +2,38 @@
 <html lang="fi-en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Petri Kumpumäki portfolio">
+    <meta name="keywords" content="HTML, CSS, Kumpumäki">
+    <meta name="author" content="Petri Kumpumäki">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>verkkoportfolio</title>
+    <title>Petri Kumpumäki</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <header>
-            <div class="e">Petri<div>
-            <div class="s">Kumpumäki<div>
+        <header id="header">
+            <h1 class="e">Petri</h1>
+            <h1 class="s">Kumpumäki</h1>
+            <h4 class="dev">Software Developer (in progress)</h4>
         </header>
-
-        <nav>
+        <nav id="navbar">
             <ul>
-                <li><a href="#"><i class="fa fa-home"></i> ETUSIVU</a></li>
-                <li><a href="#"><i class="fa fa-book"></i> PORTFOLIO</a></li>
-                <li><a href="#"><i class="fa fa-bicycle"></i> HARRASTUKSET</a></li>
+                <li><a href="#header"><i class="fa fa-home"></i></a></li>
+                <li><a href="#info"><i class="nav-link"></i> INFO</a></li>
+                <li><a href="#työhistoria"><i class="nav-link"></i> TYÖHISTORIA</a></li>
+                <li><a href="#portfolio"><i class="nav-link"></i> PORTFOLIO</a></li>
+                <li><a href="#osaaminen"><i class="nav-link"></i> OSAAMINEN</a></li>
             </ul>
         </nav>
-
-        <h1 class="tietoja">Tietoja</h1>
-        <section class="aloitus">
+        <section id="info">
+            <h2 class="tietoja">INFO</h2>
             <img id="img" src="kuvat/image.jpg" alt="Minä">
-            <p>
+            <p class="aloitus">
                 Petri Kumpumäki Jyväskylästä. 
                 valmistunut tieto- ja viestintätekniikan, 
                 ohjelmistokehittäjän perustutkinnosta keväällä 2024.
@@ -35,6 +41,76 @@
                 insinööritutkinnon, mikä on vielä meneillään.
             </p>
         </section>
+        <section id="työhistoria">
+            <h2 class="historia">TYÖHISTORIA</h2>
+            <section class="harj">
+                <h3>Harjoittelu 8.1- 28.3.2024</h3>
+                <p>
+                    Työharjoittelu kolmen kuukauden ajan Technosmart Oy:lla 
+                    ohjelmistokehittäjänä. Tein Python kielellä ohjelmiin päivityksiä ja 
+                    käsittelin sulautettujen järjestelmien ratkaisuja. GitHub ja Azure tullut
+                    täältä osaksi tutuksi.
+                </p>
+            </section>
+            <section class="jakso">
+                <h3>Työelämä jakso Valio Oy</h3>
+                <h3>2015 -</h3>
+                <p>
+                    Kunnossapitoasentaja Jyväskylän Valio automaatiovarasto.
+                    Työnkuvaani kuuluu Sähköautomaatio, mekaaniset asennukset ja korjaukset. 
+                    Vuosihuollot ja erilaiset projektityöt kuten laitevalmistajien 
+                    asennukset. Sekä ICT puolelta vaihtelevaa tekemistä.
+                </p>    
+                <h3>2008-2014</h3>
+                <p>
+                    Olin valvomotyöntekijänä, missä toimeen kuvaani kuului automaatiovaraston 
+                    käynnin valvonta ja materiaali virran kulun seuranta sekä huollot ja korjaukset.
+                </p>
+            </section>
+        </section>
+        <section id="portfolio">
+            <h2 class="tietoja">PORTFOLIO</h2>
+            <p>
+        
+            </p>
+        </section>
+        <section id="osaaminen">
+            <h2>OSAAMINEN</h2>
+            <!---<h3>ICT-Taidot</h3>---->
+            <div id="python">
+                <label for="py"><i class="fab fa-python" span title="Python"></i></label>
+                <progress id="py" value="60" max="100"> 60% </progress>
+            </div>
+            <div id="csharp">
+                <label for="C"><i class="fa-sharp fa-solid fa-c" span title="csharp">#</i></label>
+                <progress id="C" value="50" max="100"> 50% </progress>
+            </div>
+            <div id="sql">
+                <label for="kanta"><i class="fa-solid fa-database" span title="MySQL"></i></label>
+                <progress id="kanta" value="60" max="100"> 60% </progress>
+            </div>
+            <div id="html">
+                <label for="web"><i class="fa-brands fa-html5" span title="HTML5"></i></label>
+                <progress id="web" value="50" max="100"> 50% </progress>
+            </div>
+            <div id="css">
+                <label for="style"><i class="fa-brands fa-css3-alt" span title="CSS"></i></label>
+                <progress id="style" value="50" max="100"> 50% </progress>
+            </div>
+            <div id="linux">
+                <label for="ubuntu"><i class="fa-brands fa-linux" span title="Linux"></i></label>
+                <progress id="ubuntu" value="70" max="100"> 70% </progress>
+            </div>
+            <div id="git">
+                <label for="github"><i class="fa-brands fa-github" span title="GitHub"></span></i></label>
+                <progress id="github" value="70" max="100"> 70% </progress>
+            </div>
+        </section>
+        <footer>
+            <a href="www.linkedin.com/in/petri-kumpumäki" target="_blank"><i class="fa-brands fa-linkedin" span title="LinkedIn"></i></a>
+            <i class="fa-solid fa-envelope"></i>
+            Yhteystiedot: Merkkaajantie 6 40320 Jyväskylä
+        </footer>
     </main>
 </body>
 </html>
