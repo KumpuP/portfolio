@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fi-en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Petri Kumpumäki portfolio">
-    <meta name="keywords" content="HTML, CSS, Kumpumäki">
+    <meta name="keywords" content="HTML, CSS, Pyhton, csharp, tietokannat, mysql, linux, git, Kumpumäki">
     <meta name="author" content="Petri Kumpumäki">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petri Kumpumäki</title>
@@ -15,102 +15,152 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <header id="header">
+    <main><!--Sivu alkaa-->
+        <header id="header"> <!--Header alkaa-->
             <h1 class="e">Petri</h1>
             <h1 class="s">Kumpumäki</h1>
             <h4 class="dev">Software Developer (in progress)</h4>
-        </header>
-        <nav id="navbar">
+        </header>           <!--Header loppuu-->
+        <nav id="navbar">   <!--Navikointi palkki alkaa-->
             <ul>
                 <li><a href="#header"><i class="fa fa-home"></i></a></li>
                 <li><a href="#info"><i class="nav-link"></i> INFO</a></li>
                 <li><a href="#työhistoria"><i class="nav-link"></i> TYÖHISTORIA</a></li>
                 <li><a href="#portfolio"><i class="nav-link"></i> PORTFOLIO</a></li>
-                <li><a href="#osaaminen"><i class="nav-link"></i> OSAAMINEN</a></li>
             </ul>
-        </nav>
-        <section id="info">
-            <h2 class="tietoja">INFO</h2>
-            <img id="img" src="kuvat/image.jpg" alt="Minä">
+        </nav>               <!--Navikointi palkki loppuu-->
+        <h2 class="tietoja">INFO</h2>
+        <section id="info">     <!--Alkaa info-osio-->
+            <img id="img" src="kuvat/image.jpg" alt="Minä"> <!--Kuva-->
             <p class="aloitus">
-                Petri Kumpumäki Jyväskylästä. 
+                Petri Kumpumäki Jyväskylästä. Alanvaihtaja sähköautomaatio
+                ja mekaniikka kunnossapidosta. 
                 valmistunut tieto- ja viestintätekniikan, 
-                ohjelmistokehittäjän perustutkinnosta keväällä 2024.
+                ohjelmistokehittäjän perustutkinnosta työnohella keväällä 2024.
                 Syksy 2024 aloitin JAMK tieto- ja viestintätekniikan 
-                insinööritutkinnon, mikä on vielä meneillään.
+                insinööritutkinnon.
             </p>
-        </section>
-        <section id="työhistoria">
-            <h2 class="historia">TYÖHISTORIA</h2>
+        </section>              <!--Lopuu info-osio-->
+        <h2 class="historia">TYÖHISTORIA</h2>
+        <section id="työhistoria">      <!--Alkaa työhistoria osio-->
             <section class="harj">
                 <h3>Harjoittelu 8.1- 28.3.2024</h3>
                 <p>
                     Työharjoittelu kolmen kuukauden ajan Technosmart Oy:lla 
                     ohjelmistokehittäjänä. Tein Python kielellä ohjelmiin päivityksiä ja 
                     käsittelin sulautettujen järjestelmien ratkaisuja. GitHub ja Azure tullut
-                    täältä osaksi tutuksi.
+                    täältä osaksi tutuksi. Lisäksi Linux serveriin tuli tutustuttua.
                 </p>
             </section>
             <section class="jakso">
                 <h3>Työelämä jakso Valio Oy</h3>
-                <h3>2015 -</h3>
+                <h3>2015 -> </h3>
                 <p>
                     Kunnossapitoasentaja Jyväskylän Valio automaatiovarasto.
                     Työnkuvaani kuuluu Sähköautomaatio, mekaaniset asennukset ja korjaukset. 
                     Vuosihuollot ja erilaiset projektityöt kuten laitevalmistajien 
                     asennukset. Sekä ICT puolelta vaihtelevaa tekemistä.
+                    <ul class="lista">
+                        <li>Osaamista automaatio väyläratkaisuista.</li>
+                        <li>Sähkömoottorit</li>
+                        <li>Taajuusmuutajat</li>
+                        <li>As-i väylä ja siihen liitettävät kojeet</li>
+                    </ul>
                 </p>    
                 <h3>2008-2014</h3>
                 <p>
-                    Olin valvomotyöntekijänä, missä toimeen kuvaani kuului automaatiovaraston 
+                    Valvomotyöntekijänä, missä toimeen kuvaani kuului automaatiovaraston 
                     käynnin valvonta ja materiaali virran kulun seuranta sekä huollot ja korjaukset.
                 </p>
             </section>
-        </section>
-        <section id="portfolio">
-            <h2 class="tietoja">PORTFOLIO</h2>
-            <p>
-        
-            </p>
-        </section>
-        <section id="osaaminen">
-            <h2>OSAAMINEN</h2>
-            <!---<h3>ICT-Taidot</h3>---->
-            <div id="python">
-                <label for="py"><i class="fab fa-python" span title="Python"></i></label>
-                <progress id="py" value="60" max="100"> 60% </progress>
-            </div>
-            <div id="csharp">
-                <label for="C"><i class="fa-sharp fa-solid fa-c" span title="csharp">#</i></label>
-                <progress id="C" value="50" max="100"> 50% </progress>
-            </div>
-            <div id="sql">
-                <label for="kanta"><i class="fa-solid fa-database" span title="MySQL"></i></label>
-                <progress id="kanta" value="60" max="100"> 60% </progress>
-            </div>
-            <div id="html">
-                <label for="web"><i class="fa-brands fa-html5" span title="HTML5"></i></label>
-                <progress id="web" value="50" max="100"> 50% </progress>
-            </div>
-            <div id="css">
-                <label for="style"><i class="fa-brands fa-css3-alt" span title="CSS"></i></label>
-                <progress id="style" value="50" max="100"> 50% </progress>
-            </div>
-            <div id="linux">
-                <label for="ubuntu"><i class="fa-brands fa-linux" span title="Linux"></i></label>
-                <progress id="ubuntu" value="70" max="100"> 70% </progress>
-            </div>
-            <div id="git">
-                <label for="github"><i class="fa-brands fa-github" span title="GitHub"></span></i></label>
-                <progress id="github" value="70" max="100"> 70% </progress>
-            </div>
-        </section>
-        <footer>
-            <a href="www.linkedin.com/in/petri-kumpumäki" target="_blank"><i class="fa-brands fa-linkedin" span title="LinkedIn"></i></a>
-            <i class="fa-solid fa-envelope"></i>
-            Yhteystiedot: Merkkaajantie 6 40320 Jyväskylä
-        </footer>
-    </main>
+        </section>      <!--Loppuu työhistoria osio-->
+        <h2 class="port">PORTFOLIO</h2>
+        <section id="portfolio"><!--Alkaa portfolio osa-->
+            <div class="skills"> <!--Alkaa iconit FontAwesom osio-->
+                <p><i class="fab fa-python" title="Python"></i></p>
+                <p><i class="fa-sharp fa-solid fa-c" title="csharp">#</i></p>
+                <p><i class="fa-solid fa-database" title="MySQL"></i></p>
+                <p><i class="fa-brands fa-html5" title="HTML"></i></p>
+                <p><i class="fa-brands fa-css3-alt" title="CSS"></i></p>
+                <p><i class="fa-brands fa-linux" title="Linux"></i></p>
+                <p><i class="fa-brands fa-github" title="GitHub"></i></p>
+                <p><i class="fa-brands fa-js" title="JavaScript"></i></p>
+            </div>              <!--Loppuu iconit FontAwesom osio-->
+            <div class="bar"> <!--Alkaa Kehitys palkki kaikille skill ikoneille-->
+                <div class="container" title="Python">
+                    <div class="skill python" title="Python"></div>
+                </div>
+                <div class="container" title="Csharp">
+                    <div class="skill csharp" title="Csharp"></div>
+                </div>
+                <div class="container" title="MySQL">
+                    <div class="skill mysql" title="MySQL"></div>
+                </div>
+                <div class="container" title="HTML">
+                    <div class="skill html" title="HTML"></div>
+                </div>
+                <div class="container" title="CSS">
+                    <div class="skill css" title="CSS"></div>
+                </div>
+                <div class="container" title="Linux">
+                    <div class="skill linux" title="Linux"></div>
+                </div>
+                <div class="container" title="GitHub">
+                    <div class="skill git" title="GitHub"></div>
+                </div>
+                <div class="container" title="JavaScript">
+                    <div class="skill java" title="JavaScript"></div>
+                </div>
+            </div><!--Loppuu Kehitys palkki kaikille skill ikoneille-->
+            <section class="portfolio1"> <!--Alkaa poretfolio teksti osio-->
+                    <h3>Python</h3>
+                    <p>
+                        Olen käyttänyt Pythonia useissa kouluprojekteissa ja työharjoittelussa.
+                        Pythonin monipuolisuus ja helppokäyttöisyys ovat tehneet siitä tällä hetkellä 
+                        suosikkikieleni erityisesti datan käsittelyssä ja analysoinnissa sekä sen selkeydessä.
+                    </p>
+                    <h3>C#</h3>
+                        <p>
+                        C# on ollut pääasiallinen ohjelmointikieleni Vamian tutkinnon aikana, 
+                        jossa käytin sitä intensiivisesti kahden vuoden ajan tekemällä erillaisia projekteja. 
+                        Tämä antoi minulle vahvan pohjan sovelluskehityksessä. 
+                        </p>
+                    <h3>MySQL</h3>
+                        <p>
+                        Olen suorittanut MySQL-tietokantoihin liittyviä kursseja sekä Vamiassa että JAMKissa. 
+                        Näiden kurssien kautta olen oppinut suunnittelemaan ja hallinnoimaan tietokantoja tehokkaasti.
+                        </p>
+                    <h3>HTML ja CSS</h3>
+                    <p>
+                        HTML ja CSS ovat tulleet minulle tutuksi erityisesti JAMKin kursseilla. 
+                        Olen kehittänyt taitojani verkkosivujen suunnittelussa ja toteutuksessa, ja pystyn luomaan 
+                        responsiivisia ja käyttäjäystävällisiä sivustoja. Kuten tämä oma verkkoportfolio sivuni.
+                    </p>
+                    <h3>Linux</h3>
+                    <p>
+                        Linux-palvelinta olen käyttänyt JAMKin kurssilla sekä Vamian harjoittelujaksossa. Minulla on Linux 
+                        käyttöliittymä ja Linux server Oracle virtualboxissa virtuaali ympäristönä.
+                        Olen oppinut käyttämään Linuxia tehokkaasti kehitysympäristönä ja hallitsemaan palvelimia.
+                    </p>
+                    <h3>GitHub</h3>
+                    <p>
+                        GitHub on ollut keskeinen työkalu projekteissani, ja olen käyttänyt sitä versionhallintaan 
+                        sekä yhteistyöhön muiden kehittäjien kanssa. Olen luonut ja hallinnoinut useita projekteja 
+                        GitHubissa, mikä on parantanut tiimityöskentelytaitojani.
+                    </p>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Olen vähän oppinut JavaScriptiä Vamian 
+                        tutkinnossa web kehityksen kautta
+                        ja nyt alkaa keväällä 2025 kurssi 
+                        JAMKissa ja pääsen syventämään osaamistani.
+                    </p>
+            </section>      <!--Loppuu poretfolio teksti osio-->
+        </section><!--Loppuu portfolio osa-->
+        <footer><!--Alkaa footer missä linkit-->
+            <a href="www.linkedin.com/in/petri-kumpumäki" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="petri.kumpumaki@gmail.com" title="Send Mail to petri.kumpumaki@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </footer><!--Loppuu footer missä linkit-->
+    </main><!--Sivu loppuu-->
 </body>
 </html>
