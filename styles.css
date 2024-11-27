@@ -16,7 +16,6 @@ main{
     margin: 0 auto;
 }
 header{
-    display: inline-flexbox;
     font-family: "Neuton", serif;
     /*font-style: normal;*/
     letter-spacing: 0.5em;
@@ -63,6 +62,7 @@ nav a {     /*Navbarissa olevien linkkien asettelu*/
 }
 h2{ /*Määritetään h2 otsikot keskelle*/
     text-align: center;
+    margin: 0;
 }
 section#info{   /*info osio*/
     display: inline-block;
@@ -117,16 +117,18 @@ section#työhistoria{ /*Työhistoria osio*/
     background: linear-gradient(to right, rgb(248, 248, 248) 31%, #f0f0f0 99%);
 }
 section#portfolio{  /*portfolio osio*/
-    padding-bottom: 4%;
     display: flex;
     flex-wrap: wrap;
+}
+section#portfolio h2 { /*EN SAANUT palstaa asettumaan kuin tällä. määritetty erikseen otsikko keskelle.*/
+    flex-basis: 100%; /* Ensures the <h2> spans the full width */
+    text-align: center;
 }
 .portfolio1{    /*portfolion teksti osio*/
     width: 30%;
     margin-left: 4%;
     margin-top: 5%;
     margin-bottom: 6%;
-    text-align: left;
     overflow: hidden;
 }
 .portfolio1 h3{ /*Määritetään portfolio1 osion otsikoita*/
